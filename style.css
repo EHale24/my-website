@@ -1,0 +1,183 @@
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #d6cdda;  /* dark gray */
+}
+
+@keyframes gradientBG {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+{
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 24px;
+    background-color: #551e94;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #4e0f72;
+  }
+
+
+
+
+
+
+  .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 10px;
+    background-color: #c279d8;
+    color: rgb(55, 9, 65);
+    text-decoration: none;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #9000a3;
+  }
+
+  
+
+  .project-buttons {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+
+  p {
+    font-size: 25px;  /* Increase this number for larger text */
+    line-height: 1.6; /* Optional: improves readability */
+    color:#e1c5ee
+  }
+  
+  
+  .banner-img {
+    background-image: url('sasha-freemind-nXo2ZsKHTHg-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    font-family: cursive;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.4);
+  }
+  
+  .banner-img h1 {
+    font-size: 40px;
+    margin: 0;
+  }
+  
+  .banner-img p {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  
+
+  .about-section {
+    max-width: 800px;
+    margin-top: 60px;
+    padding: 30px;
+    background-color: #6e17b6;
+    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .about-section p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  
+  .social-links {
+    margin-top: 30px;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 24px;
+    background-color: #720a86;
+    color: rgb(248, 242, 250);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #005fa3;
+  }
+  
+
+  .social-icons {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .social-icons a {
+    margin: 0 15px;
+    font-size: 50px;
+    color: #e7ebee;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #7723a8;
+  }
+  
+
+
+  @media screen and (max-width: 600px) {
+    .about-section, .banner, .project-buttons {
+      padding: 15px;
+    }
+  
+    .btn {
+      display: block;
+      width: 80%;
+      margin: 10px auto;
+      font-size: 16px;
+    }
+  
+    .gallery-img {
+      width: 90%;
+      max-width: 300px;
+    }
+  
+    h1 {
+      font-size: 28px;
+    }
+  
+    p {
+      font-size: 16px;
+    }
+  }
+  
