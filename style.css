@@ -1,183 +1,108 @@
+/* ---------------- Base Styles ---------------- */
+
 body {
-    height: 100vh;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradientBG 15s ease infinite;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #d6cdda;  /* dark gray */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: #d6cdda;
 }
 
 @keyframes gradientBG {
-    0% {background-position: 0% 50%;}
-    50% {background-position: 100% 50%;}
-    100% {background-position: 0% 50%;}
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
-{
-    text-align: center;
-    margin-top: 30px;
-  }
-  
-  .btn {
-    display: inline-block;
-    margin: 10px;
-    padding: 12px 24px;
-    background-color: #551e94;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-  }
-  
-  .btn:hover {
-    background-color: #4e0f72;
-  }
+p {
+  font-size: 25px;
+  line-height: 1.6;
+  color: #e1c5ee;
+}
 
+/* ---------------- Banner ---------------- */
 
+.banner-img {
+  background-image: url('sasha-freemind-nXo2ZsKHTHg-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  color: rgb(153, 54, 173);
+  text-align: center;
+  padding: 100px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+}
 
+.banner-img h1 {
+  padding: 40px 20px;
+  text-align: center;
+}
 
+.banner-img p {
+  font-size: 20px;
+  margin-top: 10px;
+}
 
+/* ---------------- About Section ---------------- */
 
-  .btn {
-    display: inline-block;
-    padding: 12px 24px;
-    margin: 10px;
-    background-color: #c279d8;
-    color: rgb(55, 9, 65);
-    text-decoration: none;
-    border: none;
-    border-radius: 6px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .btn:hover {
-    background-color: #9000a3;
-  }
+.about-section {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #6e17b6;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
 
-  
+.about-section p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
 
-  .project-buttons {
-    text-align: center;
-    margin-top: 30px;
-  }
+/* ---------------- Buttons ----------------*/
+.button-group {
+  text-align: center;
+  margin: 40px 0;
+}
 
+.pretty-btn {
+  display: inline-block;
+  margin: 12px;
+  padding: 14px 28px;
+  background: linear-gradient(135deg, #c279d8, #720a86);
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 18px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, box-shadow 0.3s ease;
+}
 
-  p {
-    font-size: 25px;  /* Increase this number for larger text */
-    line-height: 1.6; /* Optional: improves readability */
-    color:#e1c5ee
-  }
-  
-  
-  .banner-img {
-    background-image: url('sasha-freemind-nXo2ZsKHTHg-unsplash.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-align: center;
-    padding: 100px 20px;
-    font-family: cursive;
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.4);
-  }
-  
-  .banner-img h1 {
-    font-size: 40px;
-    margin: 0;
-  }
-  
-  .banner-img p {
-    font-size: 20px;
-    margin-top: 10px;
-  }
-  
+.pretty-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(135deg, #a546d8, #4e0f72);
+}
 
-  .about-section {
-    max-width: 800px;
-    margin-top: 60px;
-    padding: 30px;
-    background-color: #6e17b6;
-    border-radius: 10px;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-  
-  .about-section p {
-    font-size: 18px;
-    line-height: 1.8;
-    margin-bottom: 20px;
-  }
-  
-  .social-links {
-    margin-top: 30px;
-  }
-  
-  .btn {
-    display: inline-block;
-    margin: 10px;
-    padding: 12px 24px;
-    background-color: #720a86;
-    color: rgb(248, 242, 250);
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-  }
-  
-  .btn:hover {
-    background-color: #005fa3;
-  }
-  
+.social-icons {
+  text-align: center;
+  margin-top: 40px;
+}
 
-  .social-icons {
-    text-align: center;
-    margin-top: 30px;
-  }
-  
-  .social-icons a {
-    margin: 0 15px;
-    font-size: 50px;
-    color: #e7ebee;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-  
-  .social-icons a:hover {
-    color: #7723a8;
-  }
-  
+.social-icons a {
+  margin: 0 15px;
+  font-size: 50px;
+  color: #52113c;
+  text-decoration: none;
+  transition: color 0.3s;
+}
 
-
-  @media screen and (max-width: 600px) {
-    .about-section, .banner, .project-buttons {
-      padding: 15px;
-    }
-  
-    .btn {
-      display: block;
-      width: 80%;
-      margin: 10px auto;
-      font-size: 16px;
-    }
-  
-    .gallery-img {
-      width: 90%;
-      max-width: 300px;
-    }
-  
-    h1 {
-      font-size: 28px;
-    }
-  
-    p {
-      font-size: 16px;
-    }
-  }
-  
+.social-icons a:hover {
+  color: #7723a8;
+}
