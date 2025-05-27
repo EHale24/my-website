@@ -22,7 +22,7 @@ jobs:
 
     - name: 🚚 Sync site to S3
       run: |
-        aws s3 sync . s3://${{ secrets.S3_BUCKET_NAME }} --delete --cache-control no-cache --acl public-read
+        aws s3 sync . s3://${{ secrets.S3_BUCKET_NAME }} --delete --cache-control no-cache
 
     - name: ❄️ Invalidate CloudFront Cache
       run: |
