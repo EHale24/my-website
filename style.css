@@ -1,0 +1,108 @@
+/* ---------------- Base Styles ---------------- */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: #d6cdda;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+p {
+  font-size: 25px;
+  line-height: 1.6;
+  color: #e1c5ee;
+}
+
+/* ---------------- Banner ---------------- */
+
+.banner-img {
+  background-image: url('sasha-freemind-nXo2ZsKHTHg-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  color: rgb(153, 54, 173);
+  text-align: center;
+  padding: 100px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+}
+
+.banner-img h1 {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.banner-img p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+/* ---------------- About Section ---------------- */
+
+.about-section {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #6e17b6;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.about-section p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* ---------------- Buttons ----------------*/
+.button-group {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.pretty-btn {
+  display: inline-block;
+  margin: 12px;
+  padding: 14px 28px;
+  background: linear-gradient(135deg, #c279d8, #720a86);
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 18px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, box-shadow 0.3s ease;
+}
+
+.pretty-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(135deg, #a546d8, #4e0f72);
+}
+
+.social-icons {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.social-icons a {
+  margin: 0 15px;
+  font-size: 50px;
+  color: #52113c;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #7723a8;
+}
