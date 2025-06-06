@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Evelyn Hale | Media Gallery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color: #fff;
+    }
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    header {
+      text-align: center;
+      padding: 60px 20px 20px;
+    }
+    header h1 {
+      font-size: 48px;
+      color: #ffd6ff;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .video-card {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 10px;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+    }
+    video {
+      width: 100%;
+      border-radius: 12px;
+    }
+    .pretty-btn {
+      display: block;
+      width: fit-content;
+      margin: 30px auto;
+      padding: 14px 28px;
+      background: linear-gradient(135deg, #c279d8, #720a86);
+      color: #fff;
+      font-weight: bold;
+      border: none;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 18px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.2s, box-shadow 0.3s ease;
+    }
+    .pretty-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+      background: linear-gradient(135deg, #a546d8, #4e0f72);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🎬 Welcome to my video gallery! 🎬</h1>
+    <p>Follow my journey and get to know me as I vlog about my life and all things computing.</p>
+  </header>
+
+  <section class="gallery">
+    <div class="video-card">
+      <video controls>
+        <source src="media/v12044gd0000d0bt8kfog65kvklmhrf0.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="video-card">
+      <video controls>
+        <source src="media/v12044gd0000d0d3civog65s5mcbe520.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="video-card">
+      <video controls>
+        <source src="media/v12044gd0000d07svog65h41l47d40.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="video-card">
+      <video controls>
+        <source src="media/v12044gd0000d0efinog65pnk6p1t90.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="video-card">
+      <video controls>
+        <source src="media/v12044gd0000d0h1j2fog65lsrp4vvo0.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="video-card">
+      <video controls>
+        <source src="media/v12044gd0000d0h3lvnog65un326h1j0.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="video-card">
+      <video controls>
+        <source src="media/v12044gd0000d0pjf6vog65ucg4ulbog.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="video-card">
+      <video controls>
+        <source src="media/v12044gd0000d0s3vn7og65ovtnvc83g.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="video-card">
+      <video controls>
+        <source src="media/v12044gd0000d0u5snnog65odpvvqdu0.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+
+  <a href="index.html" class="pretty-btn">🏠 Back to Home</a>
+</body>
+</html>
