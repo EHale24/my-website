@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Evelyn Hale - Personal Website</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
+
+  <!-- Floating Cloud Effects -->
+  <div class="clouds">
+    <div class="cloud cloud1"></div>
+    <div class="cloud cloud2"></div>
+    <div class="cloud cloud3"></div>
+  </div>
 
   <div class="container">
     <img src="me.jpg" alt="My Photo" width="200" style="border-radius: 50%; display: block; margin: 20px auto;" />
 
-    <div class="banner-img">
-      <h1>Hello World, I'm Evelyn!</h1>
+    <div class="banner-img" data-aos="fade-up">
+      <h1><span id="typed-text"></span><span class="cursor">✨</span></h1>
       <p>✨ Welcome To My Website! ✨</p>
-      <p>✨ Cloud Enthusiast | AWS Learner | Aspiring Cloud Engineer  ✨</p>
     </div>
 
-    <!-- Button Group -->
-    <div class="button-group">
+    <div class="button-group" data-aos="fade-up">
       <a href="aboutme.html" class="pretty-btn">About Me</a>
       <a href="projects.html" class="pretty-btn">Projects</a>
     </div>
-    
 
-    <!-- Social Media Icons -->
-    <div class="social-icons">
+    <div class="social-icons" data-aos="fade-up">
       <a href="https://www.linkedin.com/in/evelyn-hale-a97080186/" target="_blank" aria-label="LinkedIn">
         <i class="fab fa-linkedin"></i>
       </a>
@@ -37,38 +39,87 @@
       </a>
     </div>
 
-     <!--Media-->
+    <div class="button-group" data-aos="fade-up">
+      <a href="media-gallery.html" class="pretty-btn">🎬 Explore My Media</a>
+    </div>
 
- <div class="button-group">
-  <a href="media-gallery.html" class="pretty-btn">🎬 Explore My Media</a>
-</div>
+    <section id="contact" data-aos="fade-up">
+      <div class="contact-wrapper">
+        <h2>Contact</h2>
+        <p>Want to connect, collaborate, or discuss employment opportunities with me?</p>
+        <p>Kindly, email me at <a href="mailto:evelynhale0424@yahoo.com">evelynhale0424@yahoo.com</a></p>
+        <p>Or message me on <a href="https://linkedin.com/in/evelyn-hale-a97080186" target="_blank">LinkedIn</a></p>
+      </div>
+    </section>
 
-    <!--Contact-->
-<section id="contact">
-  <div class="contact-wrapper">
-    <h2>Contact</h2>
-    <p>Want to connect, collaborate, or discuss employment opportunities with me?</p>
-    <p>Kindly, email me at <a href="mailto:evelynhale0424@yahoo.com">evelynhale0424@yahoo.com</a></p>
-    <p>Or message me on <a href="https://linkedin.com/in/evelyn-hale-a97080186" target="_blank">LinkedIn</a></p>
-  </div>
-</section>
-
-<section id="badge" style="text-align: center; margin-top: 40px;">
-  <h2 style="color: #d7bad3;">My AWS Badges</h2>
-  <img src="aws-cloud-quest-cloud-practitioner.png" alt="AWS Cloud Quest Badge" width="150" height="150" style="margin-top: 20px; border-radius: 10px;" />
-</section>
-
-
-
- <!--Footer-->
+    <section id="badge" data-aos="fade-up" style="text-align: center; margin-top: 40px;">
+      <h2 style="color: #d7bad3;">My AWS Badges</h2>
+      <img src="aws-cloud-quest-cloud-practitioner.png" alt="AWS Cloud Quest Badge" width="150" height="150" style="margin-top: 20px; border-radius: 10px;" />
+    </section>
 
     <footer>
-    <p>&copy; 2025 Evelyn Hale. All rights reserved.</p>
-    <p>
-      Connect with me:
-      <a href="https://linkedin.com/in/evelyn-hale-a97080186" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-    </p>
-  </footer>
+      <p>&copy; 2025 Evelyn Hale. All rights reserved.</p>
+      <p>
+        Connect with me:
+        <a href="https://linkedin.com/in/evelyn-hale-a97080186" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      </p>
+    </footer>
+  </div>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
+  <script>
+    const phrases = [
+      "Hello World, I'm Evelyn!",
+      "Cloud Enthusiast 🌥️",
+      "AWS Learner 🌩️",
+      "Aspiring Cloud Engineer 🚀"
+    ];
 
+    const typedText = document.getElementById("typed-text");
+    const cursor = document.querySelector(".cursor");
+    let phraseIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    function type() {
+      const currentPhrase = phrases[phraseIndex];
+      const currentText = currentPhrase.substring(0, charIndex);
+      typedText.textContent = currentText;
+
+      if (!isDeleting && charIndex < currentPhrase.length) {
+        charIndex++;
+        setTimeout(type, 100);
+      } else if (isDeleting && charIndex > 0) {
+        charIndex--;
+        setTimeout(type, 50);
+      } else {
+        isDeleting = !isDeleting;
+        if (!isDeleting) {
+          phraseIndex = (phraseIndex + 1) % phrases.length;
+        }
+        setTimeout(type, 1000);
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      setTimeout(type, 1000);
+    });
+  </script>
+
+<script>
+  document.addEventListener("mousemove", function(e) {
+    const sparkle = document.createElement("div");
+    sparkle.className = "fairy-sparkle";
+    sparkle.style.left = e.pageX + "px";
+    sparkle.style.top = e.pageY + "px";
+    document.body.appendChild(sparkle);
+    setTimeout(() => sparkle.remove(), 1000);
+  });
+</script>
+
+</body>
+</html>
