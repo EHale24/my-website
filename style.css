@@ -5,7 +5,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #b76df7, #520863, #a7c7ff);
+  background: linear-gradient(135deg, #b76df7, #88229f, #a7c7ff);
   background-size: 400% 400%;
   animation: backgroundShift 30s ease infinite;
   color: #d6cdda;
@@ -109,7 +109,7 @@ p {
 .social-icons a {
   margin: 0 15px;
   font-size: 50px;
-  color: #52113c;
+  color: #e4aed2;
   text-decoration: none;
   transition: color 0.3s;
 }
