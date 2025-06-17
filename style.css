@@ -5,7 +5,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #b76df7, #88229f, #a7c7ff);
+  background: linear-gradient(135deg, #d649e9, #88229f, #548ef1);
   background-size: 400% 400%;
   animation: backgroundShift 30s ease infinite;
   color: #d6cdda;
@@ -58,7 +58,7 @@ p {
   padding: 20px;
   max-width: 800px;
   margin: 0 auto;
-  background-color: #6e17b6;
+  background-color: #cf53dc;
   border-radius: 10px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
   text-align: center;
